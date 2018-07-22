@@ -1,0 +1,10 @@
+{
+    "name": "buivol/psf-updater",
+    "authors": [
+        {
+            "name": "Alexander Tryakin",
+            "email": "dev@psf-group.ru"
+        }
+    ],
+    "require": {}
+}
