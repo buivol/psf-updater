@@ -6,6 +6,7 @@
  * Time: 11:05
  */
 
+$config = require_once 'config.php';
 
 $fInput = file_get_contents("php://input");
 $json = json_decode($fInput);
@@ -20,4 +21,4 @@ echo 'event: ' . $event;
 
 echo PHP_EOL;
 
-print_r($_SERVER);
+print_r($_SERVER); //shell_exec( 'cd /srv/www/git-repo/ && git reset --hard HEAD && git pull' );
