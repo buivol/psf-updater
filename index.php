@@ -43,7 +43,7 @@ if ($event == 'push') {
         var_dump($out);
         echo PHP_EOL;
         $command = 'cd ' . $config['develop']['path']['public'] . ' && composer install --no-interaction --ansi && composer update --no-interaction --ansi';
-        $out = shell_exec($command);
+        exec($command, $out);
         echo 'Выполнена команда: '. $command . PHP_EOL;
         echo 'Ответ: ' . PHP_EOL;
         var_dump($out);
