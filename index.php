@@ -42,7 +42,7 @@ if ($event == 'push') {
         echo 'Ответ: ' . PHP_EOL;
         var_dump($out);
         echo PHP_EOL;
-        $command = 'cd ' . $config['develop']['path']['public'] . ' && composer install --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader && composer update --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader';
+        $command = 'cd ' . $config['develop']['path']['public'] . ' && composer install --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader && composer update --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader';
         $out = shell_exec($command);
         echo 'Выполнена команда: '. $command . PHP_EOL;
         echo 'Ответ: ' . PHP_EOL;
