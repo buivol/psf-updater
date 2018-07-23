@@ -33,15 +33,21 @@ if ($event == 'push') {
         $command = 'cd ' . $config['develop']['path']['repo'] . ' && git reset --hard HEAD && git checkout develop && git pull';
         $out = shell_exec($command);
         echo 'Выполнена команда: '. $command . PHP_EOL;
-        echo 'Ответ: ' . $out . PHP_EOL;
-        $command = 'cd ' . $config['develop']['path']['public'] . ' && composer update --save-dev --no-interaction --ansi && php artisan migrate --force';
+        echo 'Ответ: ' . PHP_EOL;
+        var_dump($out);
+        echo PHP_EOL;
+        $command = 'cd ' . $config['develop']['path']['public'] . ' && composer update --no-interaction --ansi';
         $out = shell_exec($command);
         echo 'Выполнена команда: '. $command . PHP_EOL;
-        echo 'Ответ: ' . $out . PHP_EOL;
+        echo 'Ответ: ' . PHP_EOL;
+        var_dump($out);
+        echo PHP_EOL;
         $command = 'cd ' . $config['develop']['path']['public'] . ' && php artisan migrate --force';
         $out = shell_exec($command);
         echo 'Выполнена команда: '. $command . PHP_EOL;
-        echo 'Ответ: ' . $out . PHP_EOL;
+        echo 'Ответ: ' . PHP_EOL;
+        var_dump($out);
+        echo PHP_EOL;
     } else {
 
         echo 'Неизвестная ветка ' . $branch . PHP_EOL;
