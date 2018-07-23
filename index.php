@@ -11,9 +11,13 @@ $fInput = file_get_contents("php://input");
 $json = json_decode($fInput);
 $event = $_SERVER['X-GitHub-Event'];
 
-$date = date('H:i:s_d.m.Y');
-$logName = $date . '_' . $event . '.json';
+$date = date('dmY_His');
+$logName = 'logs/' . $date . '_' . $event . '.json';
 
 file_put_contents($logName, $fInput);
 
-echo 'hello ' . $event;
+echo 'event: ' . $event;
+
+echo PHP_EOL;
+
+print_r($_SERVER);
