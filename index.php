@@ -43,8 +43,8 @@ if ($event == 'push') {
         $generateFile .= 'cd ' . $config['develop']['path']['public'] . PHP_EOL;
         $generateFile .= 'php artisan migrate --force';
         $generateFile .= 'echo "Finished"';
-        file_put_contents('update-develop.sh', $generateFile);
-        chmod('update-develop.sh', '0777');
+        file_put_contents('composer-update-dev.sh', $generateFile);
+        chmod('composer-update-dev.sh', '0777');
 
         $command = __DIR__ . '/composer-update-dev.sh > composer-output-dev.txt';
         $output = system($command);
