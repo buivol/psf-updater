@@ -30,24 +30,7 @@ if ($event == 'push') {
     if ($branch == 'refs/heads/develop') {
         // develop ветка
         echo 'Ветка: develop' . PHP_EOL;
-        echo PHP_EOL;
-        $generateFile = '#!/usr/bin/env bash' . PHP_EOL;
-        $generateFile .= 'echo "Generated file from PSF Updater Developer branch"' . PHP_EOL . 'whoami' . PHP_EOL;
-        $generateFile .= 'cd ' . $config['develop']['path']['repo'] . PHP_EOL;
-        $generateFile .= 'git reset --hard HEAD' . PHP_EOL;
-        $generateFile .= 'git checkout develop' . PHP_EOL;
-        $generateFile .= 'git pull' . PHP_EOL;
-        $generateFile .= 'cd ' . $config['develop']['path']['public'] . PHP_EOL;
-        $generateFile .= 'composer install --no-ansi --no-interaction' . PHP_EOL;
-        $generateFile .= 'composer update  --working-dir=/var/www/dev/data/new/psf/public_html --no-ansi --no-interaction' . PHP_EOL;
-        $generateFile .= 'cd ' . $config['develop']['path']['public'] . PHP_EOL;
-        $generateFile .= 'php artisan migrate --force' . PHP_EOL;
-        $generateFile .= 'echo "Finished"' . PHP_EOL;
-        $file = __DIR__ . '/composer-update-dev.sh';
-        file_put_contents($file, $generateFile);
-        chmod($file, 0777);
-
-        $command = $file . ' > ' . __DIR__ . '/composer-output-dev.txt';
+        $command = 'cd ' . $config['develop']['path']['repo'] . ' && dep deploy';
         $output = shell_exec($command);
         var_dump($output);
         echo $command;
