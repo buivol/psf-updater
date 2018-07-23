@@ -10,9 +10,6 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
-require 'vendor/autoload.php';
-
-
 $config = require_once 'config.php';
 
 $fInput = file_get_contents("php://input");
@@ -49,32 +46,6 @@ if ($event == 'push') {
 
         $command = 'cd ' . $config['develop']['path']['public'] . ' && composer install --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader && composer update --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader';
 
-        putenv('COMPOSER_HOME=' . __DIR__ . '/vendor/bin/composer');
-// Improve performance when the xdebug extension is enabled
-        putenv('COMPOSER_DISABLE_XDEBUG_WARN=1');
-// call `composer install` command programmatically
-        $output = new \Symfony\Component\Console\Output\BufferedOutput();
-        try {
-            $params = array(
-                'command' => 'install',
-                '--no-dev' => true,
-                '--optimize-autoloader' => true,
-                '--no-suggest' => true,
-                '--no-interaction' => true,
-                '--no-progress' => true,
-                '--working-dir' => $config['develop']['path']['public'],
-                '--verbose' => true,
-            );
-            $input = new \Symfony\Component\Console\Input\ArrayInput($params);
-            $application = new \Symfony\Component\Console\Application();
-            $application->setAutoExit(false);
-            $application->run($input, $output);
-        } catch (Exception $ex) {
-            $output->writeln($ex->getMessage());
-        }
-
-        $stream_output = $output->fetch();// get buffer string
-        echo $stream_output;
 
         //$out = shell_exec($command);
        echo 'Выполнена команда: '. $command . PHP_EOL;
