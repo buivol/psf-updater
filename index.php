@@ -19,6 +19,7 @@ $event = $_SERVER['HTTP_X_GITHUB_EVENT'];
 $date = date('dmY_His');
 $logName = 'logs/' . $date . '_' . $event . '.json';
 
+
 file_put_contents($logName, $fInput);
 
 echo 'event: ' . $event;
@@ -30,7 +31,8 @@ if ($event == 'push') {
     if ($branch == 'refs/heads/develop') {
         // develop ветка
         echo 'Ветка: develop' . PHP_EOL;
-        $command = 'cd ' . $config['develop']['path']['repo'] . ' && dep deploy';
+        $logNameD = 'logs/deploy_develop_' . $date . '.log';
+        $command = 'cd ' . $config['develop']['path']['repo'] . ' && dep deploy -vvv --no-interaction --log=' . __DIR__ . '/' . $logNameD;
         $output = shell_exec($command);
         var_dump($output);
         echo $command;
