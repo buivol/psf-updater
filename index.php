@@ -30,32 +30,27 @@ if ($event == 'push') {
     if ($branch == 'refs/heads/develop') {
         // develop ветка
         echo 'Ветка: develop' . PHP_EOL;
-        $command = 'whoami';
-        $out = shell_exec($command);
-        echo 'Выполнена команда: ' . $command . PHP_EOL;
-        echo 'Ответ: ' . PHP_EOL;
-        var_dump($out);
         echo PHP_EOL;
-        $command = 'cd ' . $config['develop']['path']['repo'] . ' && git reset --hard HEAD && git checkout develop && git pull';
-        $out = shell_exec($command);
-        echo 'Выполнена команда: ' . $command . PHP_EOL;
-        echo 'Ответ: ' . PHP_EOL;
-        var_dump($out);
-        echo PHP_EOL;
+        $generateFile .= '#!/usr/bin/env bash' . PHP_EOL;
+        $generateFile .= 'echo "Generated file from PSF Updater Developer branch"' . PHP_EOL . 'whoami' . PHP_EOL;
+        $generateFile .= 'cd ' . $config['develop']['path']['repo'] . PHP_EOL;
+        $generateFile .= 'git reset --hard HEAD' . PHP_EOL;
+        $generateFile .= 'git checkout develop' . PHP_EOL;
+        $generateFile .= 'git pull' . PHP_EOL;
+        $generateFile .= 'cd ' .$config['develop']['path']['public'] . PHP_EOL;
+        $generateFile .= 'composer install --no-ansi --no-interaction --no-scripts --optimize-autoloader --no-progress' . PHP_EOL;
+        $generateFile .= 'composer update  --working-dir=/var/www/dev/data/new/psf/public_html --no-ansi --no-interaction --no-scripts --no-progress --optimize-autoloader' . PHP_EOL;
+        $generateFile .= 'cd ' . $config['develop']['path']['public'] . PHP_EOL;
+        $generateFile .= 'php artisan migrate --force';
+        $generateFile .= 'echo "Finished"';
+        file_put_contents('update-develop.sh', $generateFile);
+        chmod('update-develop.sh', '0777');
 
-        $command = './composer-update-dev.sh > composer-output-dev.txt';
+        $command = __DIR__ . '/composer-update-dev.sh > composer-output-dev.txt';
+        $output = system($command);
+        var_dump($output);
+        echo $command;
 
-        $out = shell_exec($command);
-        echo 'Выполнена команда: ' . $command . PHP_EOL;
-        //echo 'Ответ: ' . PHP_EOL;
-        //var_dump($out);
-        echo PHP_EOL;
-        $command = 'cd ' . $config['develop']['path']['public'] . ' && php artisan migrate --force';
-        $out = shell_exec($command);
-        echo 'Выполнена команда: ' . $command . PHP_EOL;
-        echo 'Ответ: ' . PHP_EOL;
-        var_dump($out);
-        echo PHP_EOL;
     } else {
 
         echo 'Неизвестная ветка ' . $branch . PHP_EOL;
