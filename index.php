@@ -9,7 +9,7 @@
 
 $fInput = file_get_contents("php://input");
 $json = json_decode($fInput);
-$event = $_SERVER['X-GitHub-Event'];
+$event = $_SERVER['HTTP_X_GITHUB_EVENT'];
 
 $date = date('dmY_His');
 $logName = 'logs/' . $date . '_' . $event . '.json';
