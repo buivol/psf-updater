@@ -25,6 +25,9 @@ file_put_contents($logName, $fInput);
 echo 'event: ' . $event;
 
 echo PHP_EOL;
+print_r(getenv('HOME'));
+print_r(getenv('COMPOSER_HOME'));
+echo PHP_EOL;
 
 if ($event == 'push') {
     $branch = $json['ref'];
