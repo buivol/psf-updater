@@ -37,12 +37,12 @@ if ($event == 'push') {
         $generateFile .= 'git reset --hard HEAD' . PHP_EOL;
         $generateFile .= 'git checkout develop' . PHP_EOL;
         $generateFile .= 'git pull' . PHP_EOL;
-        $generateFile .= 'cd ' .$config['develop']['path']['public'] . PHP_EOL;
+        $generateFile .= 'cd ' . $config['develop']['path']['public'] . PHP_EOL;
         $generateFile .= 'composer install --no-ansi --no-interaction --no-scripts --optimize-autoloader --no-progress' . PHP_EOL;
         $generateFile .= 'composer update  --working-dir=/var/www/dev/data/new/psf/public_html --no-ansi --no-interaction --no-scripts --no-progress --optimize-autoloader' . PHP_EOL;
         $generateFile .= 'cd ' . $config['develop']['path']['public'] . PHP_EOL;
-        $generateFile .= 'php artisan migrate --force';
-        $generateFile .= 'echo "Finished"';
+        $generateFile .= 'php artisan migrate --force' . PHP_EOL;
+        $generateFile .= 'echo "Finished"' . PHP_EOL;
         file_put_contents('composer-update-dev.sh', $generateFile);
         chmod('composer-update-dev.sh', '0777');
 
