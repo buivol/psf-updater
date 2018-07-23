@@ -13,7 +13,7 @@ error_reporting(E_ALL);
 $config = require_once 'config.php';
 
 $fInput = file_get_contents("php://input");
-$json = json_decode($fInput);
+$json = json_decode($fInput, 1);
 $event = $_SERVER['HTTP_X_GITHUB_EVENT'];
 
 $date = date('dmY_His');
