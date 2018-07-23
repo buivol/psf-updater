@@ -30,7 +30,7 @@ if ($event == 'push') {
     if ($branch == 'refs/heads/develop') {
         // develop ветка
         echo 'Ветка: develop' . PHP_EOL;
-        shell_exec('cd ' . $config['develop']['path']['repo'] . ' && git reset --hard HEAD && git checkout develop && git pull && cd ' . $config['develop']['path']['public'] . ' composer update --save-dev --no-interaction --ansi && php artisan migrate --force');
+        shell_exec('cd ' . $config['develop']['path']['repo'] . ' && git reset --hard HEAD && git checkout develop && git pull && cd ' . $config['develop']['path']['public'] . ' && composer update --save-dev --no-interaction --ansi && php artisan migrate --force');
     } else {
 
         echo 'Неизвестная ветка ' . $branch . PHP_EOL;
