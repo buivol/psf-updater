@@ -47,7 +47,7 @@ if ($event == 'push') {
         echo PHP_EOL;
 
 
-        $command = 'cd ' . $config['develop']['path']['public'] . ' && php composer.phar install --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader && php composer.phar update --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader';
+        $command = 'cd ' . $config['develop']['path']['public'] . ' && composer install --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader && composer update --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader';
 
         putenv('COMPOSER_HOME=' . __DIR__ . '/vendor/bin/composer');
 // Improve performance when the xdebug extension is enabled
@@ -77,7 +77,7 @@ if ($event == 'push') {
         echo $stream_output;
 
         //$out = shell_exec($command);
-       // echo 'Выполнена команда: '. $command . PHP_EOL;
+       echo 'Выполнена команда: '. $command . PHP_EOL;
         //echo 'Ответ: ' . PHP_EOL;
         //var_dump($out);
         echo PHP_EOL;
