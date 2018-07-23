@@ -44,7 +44,7 @@ if ($event == 'push') {
         // develop ветка
         echo 'Ветка: develop' . PHP_EOL;
         $logNameD = 'logs/deploy_develop_' . $date . '.log';
-        $command = 'cd ' . $config['develop']['path']['repo'] . ' && dep deploy --branch=develop --no-interaction --log=' . __DIR__ . '/' . $logNameD;
+        $command = 'cd ' . $config['develop']['path']['repo'] . ' && dep deploy --vvv --branch=develop --no-interaction --log=' . __DIR__ . '/' . $logNameD;
         $output = shell_exec($command);
         var_dump($output);
         echo $command;
