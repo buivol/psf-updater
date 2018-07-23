@@ -49,6 +49,15 @@ if ($event == 'push') {
         var_dump($output);
         echo $command;
 
+    }else if ($branch == 'refs/heads/master') {
+        // develop ветка
+        echo 'Ветка: master' . PHP_EOL;
+        $logNameD = 'logs/deploy_master_' . $date . '.log';
+        $command = 'cd ' . $config['master']['path']['repo'] . ' && dep deploy -vvv --branch=master --no-interaction --log=' . __DIR__ . '/' . $logNameD;
+        $output = shell_exec($command);
+        var_dump($output);
+        echo $command;
+
     } else {
 
         echo 'Неизвестная ветка ' . $branch . PHP_EOL;
