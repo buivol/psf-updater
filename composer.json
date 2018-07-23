@@ -6,5 +6,7 @@
             "email": "dev@psf-group.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "composer/composer": "^1.6"
+    }
 }
