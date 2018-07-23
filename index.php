@@ -30,6 +30,12 @@ if ($event == 'push') {
     if ($branch == 'refs/heads/develop') {
         // develop ветка
         echo 'Ветка: develop' . PHP_EOL;
+        $command = 'whoami';
+        $out = shell_exec($command);
+        echo 'Выполнена команда: '. $command . PHP_EOL;
+        echo 'Ответ: ' . PHP_EOL;
+        var_dump($out);
+        echo PHP_EOL;
         $command = 'cd ' . $config['develop']['path']['repo'] . ' && git reset --hard HEAD && git checkout develop && git pull';
         $out = shell_exec($command);
         echo 'Выполнена команда: '. $command . PHP_EOL;
