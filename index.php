@@ -21,4 +21,17 @@ echo 'event: ' . $event;
 
 echo PHP_EOL;
 
+if ($event == 'push') {
+    $branch = $json['ref'];
+    if ($branch == 'refs/heads/develop') {
+        // develop ветка
+        echo 'Ветка: develop' . PHP_EOL;
+        shell_exec('cd ' . $config['develop']['path']['repo'] . ' && git reset --hard HEAD && git checkout develop && git pull && cd ' . $config['develop']['path']['public'] . ' composer update --save-dev --no-interaction --ansi && php artisan migrate --force');
+    } else {
+
+        echo 'Неизвестная ветка ' . $branch . PHP_EOL;
+    }
+}
+
+
 print_r($_SERVER); //shell_exec( 'cd /srv/www/git-repo/ && git reset --hard HEAD && git pull' );
