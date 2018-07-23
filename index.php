@@ -31,7 +31,7 @@ if ($event == 'push') {
         // develop ветка
         echo 'Ветка: develop' . PHP_EOL;
         echo PHP_EOL;
-        $generateFile .= '#!/usr/bin/env bash' . PHP_EOL;
+        $generateFile = '#!/usr/bin/env bash' . PHP_EOL;
         $generateFile .= 'echo "Generated file from PSF Updater Developer branch"' . PHP_EOL . 'whoami' . PHP_EOL;
         $generateFile .= 'cd ' . $config['develop']['path']['repo'] . PHP_EOL;
         $generateFile .= 'git reset --hard HEAD' . PHP_EOL;
@@ -43,11 +43,12 @@ if ($event == 'push') {
         $generateFile .= 'cd ' . $config['develop']['path']['public'] . PHP_EOL;
         $generateFile .= 'php artisan migrate --force' . PHP_EOL;
         $generateFile .= 'echo "Finished"' . PHP_EOL;
-        file_put_contents('composer-update-dev.sh', $generateFile);
-        chmod('composer-update-dev.sh', '0777');
+        $file = __DIR__ . '/composer-update-dev.sh';
+        file_put_contents($file, $generateFile);
+        chmod($file, 0777);
 
-        $command = __DIR__ . '/composer-update-dev.sh > composer-output-dev.txt';
-        $output = system($command);
+        $command = $file . ' > ' . __DIR__ . '/composer-output-dev.txt';
+        $output = shell_exec($command);
         var_dump($output);
         echo $command;
 
