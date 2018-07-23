@@ -32,29 +32,27 @@ if ($event == 'push') {
         echo 'Ветка: develop' . PHP_EOL;
         $command = 'whoami';
         $out = shell_exec($command);
-        echo 'Выполнена команда: '. $command . PHP_EOL;
+        echo 'Выполнена команда: ' . $command . PHP_EOL;
         echo 'Ответ: ' . PHP_EOL;
         var_dump($out);
         echo PHP_EOL;
         $command = 'cd ' . $config['develop']['path']['repo'] . ' && git reset --hard HEAD && git checkout develop && git pull';
         $out = shell_exec($command);
-        echo 'Выполнена команда: '. $command . PHP_EOL;
+        echo 'Выполнена команда: ' . $command . PHP_EOL;
         echo 'Ответ: ' . PHP_EOL;
         var_dump($out);
         echo PHP_EOL;
 
+        $command = './composer-update-dev.sh > composer-output-dev.txt';
 
-        $command = 'cd ' . $config['develop']['path']['public'] . ' && composer install --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader && composer update --working-dir=' .$config['develop']['path']['public'] .' --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader';
-
-
-        //$out = shell_exec($command);
-       echo 'Выполнена команда: '. $command . PHP_EOL;
+        $out = shell_exec($command);
+        echo 'Выполнена команда: ' . $command . PHP_EOL;
         //echo 'Ответ: ' . PHP_EOL;
         //var_dump($out);
         echo PHP_EOL;
         $command = 'cd ' . $config['develop']['path']['public'] . ' && php artisan migrate --force';
         $out = shell_exec($command);
-        echo 'Выполнена команда: '. $command . PHP_EOL;
+        echo 'Выполнена команда: ' . $command . PHP_EOL;
         echo 'Ответ: ' . PHP_EOL;
         var_dump($out);
         echo PHP_EOL;
