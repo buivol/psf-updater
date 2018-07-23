@@ -28,7 +28,16 @@ echo PHP_EOL;
 print_r(getenv('HOME'));
 print_r(getenv('COMPOSER_HOME'));
 echo PHP_EOL;
+echo 'putenv';
+putenv('COMPOSER_HOME=/var/www/dev/data/.config/composer');
+putenv('HOME=/var/www/dev/data');
+echo PHP_EOL;
+print_r(getenv('HOME'));
+print_r(getenv('COMPOSER_HOME'));
+echo PHP_EOL;
 
+print_r(getenv('HOME'));
+print_r(getenv('COMPOSER_HOME'));
 if ($event == 'push') {
     $branch = $json['ref'];
     if ($branch == 'refs/heads/develop') {
