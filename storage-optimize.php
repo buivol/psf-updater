@@ -37,7 +37,7 @@ function dirToArray($dir)
 }
 
 
-function optimizeDir($path, $recursive = true)
+function optimizeDir($path, $recursive = true, $fullPathRemove = '')
 {
     $result = [];
     $files = dirToArray($path);
@@ -45,15 +45,15 @@ function optimizeDir($path, $recursive = true)
     foreach ($files as $p => $file) {
         $fullPath = $path . DIRECTORY_SEPARATOR . $p;
         if ($recursive && is_array($file)) {
-            $result[$fullPath] = optimizeDir($fullPath, $recursive);
+            $result[str_replace($fullPathRemove, '', $fullPath)] = optimizeDir($fullPath, $recursive);
         } else if (!is_array($file)) {
-            $result[$fullPath] = [
+            $result[str_replace($fullPathRemove, '', $fullPath)] = [
                 'oldSize' => filesize($fullPath),
                 'newSize' => 0,
                 'optimized' => true,
             ];
         } else {
-            $result[$fullPath] = [];
+            $result[str_replace($fullPathRemove, '', $fullPath)] = [];
         }
     }
     return $result;
