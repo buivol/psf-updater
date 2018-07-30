@@ -48,11 +48,22 @@ function optimizeDir($path, $recursive = true, $fullPathRemove = '')
             $result[$p] = optimizeDir($fullPath, $recursive);
         } else if (!is_array($file)) {
             $fullPath = $path . DIRECTORY_SEPARATOR . $file;
-            $result[$p] = [
-                'oldSize' => filesize($fullPath),
-                'newSize' => 0,
-                'optimized' => true,
+            $ext = strtolower(end(explode('.', $file)));
+            $fs = filesize($fullPath);
+            $rsl = [
+                'oldSize' => $fs,
+                'newSize' => $fs,
+                'optimized' => false,
+                'optimizePlugin' => 'skip',
+                'extension' => $ext,
             ];
+
+            if (in_array($ext, ['png', 'jpg', 'jpeg', 'svg', 'gif'])) {
+                $rsl['optimized'] = true;
+                $rsl['optimizePlugin'] = 'spatie';
+            }
+
+            $result[$file] = $rsl;
         } else {
             $result[$p] = [];
         }
@@ -79,7 +90,6 @@ $opt1path = $storagePath . 'app' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_S
 $files = optimizeDir($opt1path, 1);
 
 
-
-    dd($files);
+dd($files);
 
 echo json_encode($result);
