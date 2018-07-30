@@ -2,8 +2,119 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7254b4e-1d07-46ab-82bd-c453a943f869" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/vendor/bin/var-dump-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/larapack/dd/.hound.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/larapack/dd/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/larapack/dd/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/larapack/dd/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/larapack/dd/roadmap.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/larapack/dd/src/helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Mbstring.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/lowerCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/Resources/unidata/upperCase.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/Php72.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/polyfill-php72/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/AmqpCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ArgsStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/Caster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ClassStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ConstStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/CutArrayStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/CutStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DOMCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DateCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/DoctrineCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/EnumStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ExceptionCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/FrameStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/GmpCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/LinkStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/PdoCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/PgSqlCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/RedisCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ReflectionCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/ResourceCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/SplCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/StubCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/SymfonyCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/TraceStub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/XmlReaderCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Caster/XmlResourceCaster.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/AbstractCloner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/ClonerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Cursor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Data.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/DumperInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/Stub.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Cloner/VarCloner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Command/Descriptor/CliDescriptor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Command/Descriptor/DumpDescriptorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Command/Descriptor/HtmlDescriptor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Command/ServerDumpCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/AbstractDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/CliDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextProvider/CliContextProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextProvider/ContextProviderInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextProvider/RequestContextProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ContextProvider/SourceContextProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/DataDumperInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/HtmlDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Dumper/ServerDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Exception/ThrowingCasterException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/bin/var-dump-server" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/css/htmlDescriptor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/functions/dump.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Resources/js/htmlDescriptor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Server/Connection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Server/DumpServer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Test/VarDumperTestTrait.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/CasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/DateCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/ExceptionCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/GmpCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/PdoCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/RedisCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/ReflectionCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/SplCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/StubCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Caster/XmlReaderCasterTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Cloner/DataTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Cloner/VarClonerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Dumper/CliDumperTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Dumper/HtmlDumperTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Dumper/ServerDumperTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Fixtures/FooInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Fixtures/GeneratorDemo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Fixtures/NotLoadableClass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Fixtures/Twig.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Fixtures/dumb-var.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Fixtures/dump_server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Fixtures/xml_reader.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Server/ConnectionTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/Tests/Test/VarDumperTestTraitTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/VarDumper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/symfony/var-dumper/phpunit.xml.dist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage-optimize.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage-optimize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +131,17 @@
       <file leaf-file-name="storage-optimize.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/storage-optimize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="858">
+              <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -62,6 +182,10 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/larapack/dd" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -115,7 +239,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532942465834</updated>
-      <workItem from="1532942467438" duration="509000" />
+      <workItem from="1532942467438" duration="1680000" />
     </task>
     <task id="LOCAL-00001" summary="add optimizer">
       <created>1532942704475</created>
@@ -131,11 +255,25 @@
       <option name="project" value="LOCAL" />
       <updated>1532942869961</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add optimizer">
+      <created>1532943058940</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1532943058940</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add optimizer">
+      <created>1532944297210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1532944297210</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="509000" />
+    <option name="totallyTimeSpent" value="1680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -180,10 +318,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/storage-optimize.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        <state relative-caret-position="858">
+          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
         </state>
       </provider>
     </entry>

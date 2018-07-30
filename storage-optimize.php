@@ -41,13 +41,21 @@ use Spatie\ImageOptimizer\OptimizerChainFactory;
 $optimizerChain = OptimizerChainFactory::create();
 //storage/app/uploads/public
 
-// optimize storage/app/uploads/public
 
-$publicPath = $config[$branch]['path']['repo'];
+
+$publicPath = $config[$branch]['path']['repo']. DIRECTORY_SEPARATOR . 'public_html' . DIRECTORY_SEPARATOR;
+$storagePath = $publicPath . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR;
 
 $result['publicPath'] = $publicPath;
+$result['storagePath'] = $storagePath;
 
 //$optimizerChain->optimize($pathToImage);
 
+// optimize storage/app/uploads/public
+
+$opt1path = $storagePath . 'app' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR;
+$files = dirToArray($opt1path);
+
+dd($files);
 
 echo json_encode($result);
