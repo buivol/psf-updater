@@ -74,8 +74,8 @@ $result['storagePath'] = $storagePath;
 
 // optimize storage/app/uploads/public
 
-$opt1path = $storagePath . 'app' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'public' . DIRECTORY_SEPARATOR;
-$files = optimizeDir($opt1path);
+$opt1path = $storagePath . 'app' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'public';
+$files = optimizeDir($opt1path, 1);
 
 
 
