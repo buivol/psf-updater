@@ -1317,7 +1317,7 @@ class Process implements \IteratorAggregate
      *
      * @throws InvalidArgumentException if the given timeout is a negative number
      */
-    private function validateTimeout(?float $timeout): ?float
+    private function validateTimeout($timeout): float
     {
         $timeout = (float) $timeout;
 
