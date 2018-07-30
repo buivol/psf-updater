@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7254b4e-1d07-46ab-82bd-c453a943f869" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage-optimize.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage-optimize.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/process/Process.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/process/Process.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="storage-optimize.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="storage-optimize.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/storage-optimize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            <state relative-caret-position="378">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Process.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/process/Process.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="139" column="100" selection-start-line="139" selection-start-column="100" selection-end-line="139" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -53,6 +62,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/storage-optimize.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/process/Process.php" />
       </list>
     </option>
   </component>
@@ -93,6 +103,24 @@
               <item name="psf-updater" type="b2602c69:ProjectViewProjectNode" />
               <item name="psf-updater" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="psf-updater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psf-updater" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psf-updater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psf-updater" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="psf-updater" type="b2602c69:ProjectViewProjectNode" />
+              <item name="psf-updater" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="symfony" type="462c0819:PsiDirectoryNode" />
+              <item name="process" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -128,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532942465834</updated>
-      <workItem from="1532942467438" duration="3778000" />
+      <workItem from="1532942467438" duration="4091000" />
     </task>
     <task id="LOCAL-00001" summary="add optimizer">
       <created>1532942704475</created>
@@ -214,11 +242,25 @@
       <option name="project" value="LOCAL" />
       <updated>1532946759635</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add optimizer">
+      <created>1532946811016</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1532946811016</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add optimizer">
+      <created>1532947016459</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1532947016459</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3778000" />
+    <option name="totallyTimeSpent" value="4091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -272,8 +314,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage-optimize.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        <state relative-caret-position="378">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/process/Process.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="139" column="100" selection-start-line="139" selection-start-column="100" selection-end-line="139" selection-end-column="100" />
         </state>
       </provider>
     </entry>

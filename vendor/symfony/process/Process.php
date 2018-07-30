@@ -137,7 +137,7 @@ class Process implements \IteratorAggregate
      *
      * @throws RuntimeException When proc_open is not installed
      */
-    public function __construct($commandline, string $cwd = null, array $env = null, $input = null, ?float $timeout = 60)
+    public function __construct($commandline, string $cwd = null, array $env = null, $input = null, $timeout = 60)
     {
         if (!function_exists('proc_open')) {
             throw new RuntimeException('The Process class relies on proc_open, which is not available on your PHP installation.');
