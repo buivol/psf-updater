@@ -43,10 +43,11 @@ function optimizeDir($path, $recursive = true, $fullPathRemove = '')
     $files = dirToArray($path);
     if (!count($files)) return $result;
     foreach ($files as $p => $file) {
-        $fullPath = $path . DIRECTORY_SEPARATOR . $p;
         if ($recursive && is_array($file)) {
+            $fullPath = $path . DIRECTORY_SEPARATOR . $p;
             $result[$p] = optimizeDir($fullPath, $recursive);
         } else if (!is_array($file)) {
+            $fullPath = $path . DIRECTORY_SEPARATOR . $file;
             $result[$p] = [
                 'oldSize' => filesize($fullPath),
                 'newSize' => 0,
