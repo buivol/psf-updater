@@ -2,90 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7254b4e-1d07-46ab-82bd-c453a943f869" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage-optimize.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/AbstractLogger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/InvalidArgumentException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LogLevel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerAwareTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/LoggerTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/NullLogger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/Psr/Log/Test/LoggerInterfaceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/psr/log/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/CONTRIBUTING.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/docs/examples/graph-optimized.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/docs/examples/graph.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/docs/examples/image-optimized.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/docs/examples/image.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/docs/examples/logo-optimized.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/docs/examples/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/DummyLogger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/Optimizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/OptimizerChain.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/OptimizerChainFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/Optimizers/BaseOptimizer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/Optimizers/Gifsicle.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/Optimizers/Jpegoptim.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/Optimizers/Optipng.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/Optimizers/Pngquant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/spatie/image-optimizer/src/Optimizers/Svgo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Exception/ExceptionInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Exception/InvalidArgumentException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Exception/LogicException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Exception/ProcessFailedException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Exception/ProcessSignaledException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Exception/ProcessTimedOutException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Exception/RuntimeException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/ExecutableFinder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/InputStream.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/PhpExecutableFinder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/PhpProcess.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Pipes/AbstractPipes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Pipes/PipesInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Pipes/UnixPipes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Pipes/WindowsPipes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Process.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/ProcessUtils.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ExecutableFinderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/NonStopableProcess.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/PhpExecutableFinderTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/PhpProcessTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/PipeStdinInStdoutStdErrStreamSelect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessFailedExceptionTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/ProcessTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/Tests/SignalListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/symfony/process/phpunit.xml.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/psf-updater.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/psf-updater.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage-optimize.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage-optimize.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,8 +20,8 @@
       <file leaf-file-name="storage-optimize.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/storage-optimize.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="270">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -197,12 +115,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532942465834</updated>
-      <workItem from="1532942467438" duration="210000" />
+      <workItem from="1532942467438" duration="509000" />
     </task>
+    <task id="LOCAL-00001" summary="add optimizer">
+      <created>1532942704475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1532942704475</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add optimizer">
+      <created>1532942869961</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1532942869961</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210000" />
+    <option name="totallyTimeSpent" value="509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -235,6 +168,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add optimizer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add optimizer" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -245,8 +182,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage-optimize.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="270">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
