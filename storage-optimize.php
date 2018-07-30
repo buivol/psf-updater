@@ -77,22 +77,6 @@ function optimizeDir($path, $recursive = true, $optimizerChain = null)
     return $result;
 }
 
-//storage/app/uploads/public
-
-
-$publicPath = $config[$branch]['path']['repo'] . DIRECTORY_SEPARATOR . 'public_html' . DIRECTORY_SEPARATOR;
-$storagePath = $publicPath . 'storage' . DIRECTORY_SEPARATOR;
-
-$result['publicPath'] = $publicPath;
-$result['storagePath'] = $storagePath;
-
-
-// optimize storage/app/uploads/public
-
-$opt1path = $storagePath . 'app' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'public';
-$files = optimizeDir($opt1path, 1);
-
-$result['items'] = $files;
 
 function scanFileSize($arr)
 {
@@ -116,12 +100,32 @@ function scanFileSize($arr)
     return $result;
 }
 
+
+//storage/app/uploads/public
+
+
+$publicPath = $config[$branch]['path']['repo'] . DIRECTORY_SEPARATOR . 'public_html' . DIRECTORY_SEPARATOR;
+$storagePath = $publicPath . 'storage' . DIRECTORY_SEPARATOR;
+
+$result['publicPath'] = $publicPath;
+$result['storagePath'] = $storagePath;
+
+
+// optimize storage/app/uploads/public
+
+$opt1path = $storagePath . 'app' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'public';
+$files = optimizeDir($opt1path, 1);
+
 $scan = scanFileSize($files);
 
-$result['count'] = $scan['count'];
-$result['size'] = $scan['size'];
+$result['opt1'] = [
+    'items' => $files,
+    'path' => $opt1path,
+    'count' => $scan['count'],
+    'size' => $scan['size']
+];
 
-if(isset($_GET['dd'])){
+if (isset($_GET['dd'])) {
     dd($result);
 }
 
