@@ -37,15 +37,18 @@ function dirToArray($dir)
 }
 
 
-function optimizeDir($path, $recursive = true)
+function optimizeDir($path, $recursive = true, $optimizerChain = null)
 {
+    if (!$optimizerChain) {
+        $optimizerChain = OptimizerChainFactory::create();
+    }
     $result = [];
     $files = dirToArray($path);
     if (!count($files)) return $result;
     foreach ($files as $p => $file) {
         if ($recursive && is_array($file)) {
             $fullPath = $path . DIRECTORY_SEPARATOR . $p;
-            $result[$p] = optimizeDir($fullPath, $recursive);
+            $result[$p] = optimizeDir($fullPath, $recursive, $optimizerChain);
         } else if (!is_array($file)) {
             $fullPath = $path . DIRECTORY_SEPARATOR . $file;
             $a = explode('.', $file);
@@ -62,6 +65,8 @@ function optimizeDir($path, $recursive = true)
             if (in_array($ext, ['png', 'jpg', 'jpeg', 'svg', 'gif'])) {
                 $rsl['optimized'] = true;
                 $rsl['optimizePlugin'] = 'spatie';
+                $optimizerChain->optimize($fullPath);
+                $rsl['newSize'] = filesize($fullPath);
             }
 
             $result[$file] = $rsl;
