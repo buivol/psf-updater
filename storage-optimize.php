@@ -77,8 +77,6 @@ function optimizeDir($path, $recursive = true, $optimizerChain = null)
     return $result;
 }
 
-
-$optimizerChain = OptimizerChainFactory::create();
 //storage/app/uploads/public
 
 
@@ -88,14 +86,43 @@ $storagePath = $publicPath . 'storage' . DIRECTORY_SEPARATOR;
 $result['publicPath'] = $publicPath;
 $result['storagePath'] = $storagePath;
 
-//$optimizerChain->optimize($pathToImage);
 
 // optimize storage/app/uploads/public
 
 $opt1path = $storagePath . 'app' . DIRECTORY_SEPARATOR . 'uploads' . DIRECTORY_SEPARATOR . 'public';
 $files = optimizeDir($opt1path, 1);
 
+$result['items'] = $files;
 
-dd($files);
+function scanFileSize($arr)
+{
+    $result = [
+        'count' => 0,
+        'size' => 0,
+    ];
+    foreach ($arr as $item) {
+        if (!count($item)) continue;
+        if (isset($item['optimized'])) {
+            if ($item['optimized']) {
+                $result['count']++;
+                $result['size'] += $item['oldSize'] - $item['newSize'];
+            }
+        } else {
+            $r = scanFileSize($item);
+            $result['count'] += $r['count'];
+            $result['size'] += $r['size'];
+        }
+    }
+    return $result;
+}
+
+$scan = scanFileSize($files);
+
+$result['count'] = $scan['count'];
+$result['size'] = $scan['size'];
+
+if(isset($_GET['dd'])){
+    dd($result);
+}
 
 echo json_encode($result);
