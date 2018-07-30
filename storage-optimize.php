@@ -42,8 +42,8 @@ function optimizeDir($path, $recursive = true)
     $result = [];
     $files = dirToArray($path);
     if (!count($files)) return $result;
-    foreach ($files as $file) {
-        $fullPath = $path . DIRECTORY_SEPARATOR . $file;
+    foreach ($files as $p => $file) {
+        $fullPath = $path . DIRECTORY_SEPARATOR . $p;
         if ($recursive && is_array($file)) {
             $result[$fullPath] = optimizeDir($fullPath, $recursive);
         } else if (!is_array($file)) {
@@ -65,7 +65,7 @@ $optimizerChain = OptimizerChainFactory::create();
 
 
 $publicPath = $config[$branch]['path']['repo'] . DIRECTORY_SEPARATOR . 'public_html' . DIRECTORY_SEPARATOR;
-$storagePath = $publicPath . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR;
+$storagePath = $publicPath . 'storage' . DIRECTORY_SEPARATOR;
 
 $result['publicPath'] = $publicPath;
 $result['storagePath'] = $storagePath;
