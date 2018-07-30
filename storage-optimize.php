@@ -104,7 +104,7 @@ function scanFileSize($arr)
 //storage/app/uploads/public
 
 
-$publicPath = $config[$branch]['path']['repo'] . DIRECTORY_SEPARATOR . 'public_html' . DIRECTORY_SEPARATOR;
+$publicPath = $config[$branch]['path']['repo'] . DIRECTORY_SEPARATOR . 'current' . DIRECTORY_SEPARATOR . 'public_html' . DIRECTORY_SEPARATOR;
 $storagePath = $publicPath . 'storage' . DIRECTORY_SEPARATOR;
 
 $result['publicPath'] = $publicPath;
